@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -32,7 +33,7 @@ export default function Weather() {
   let form = (
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a City" onChange={updateCity} />
-      <button type="Submit">Search</button>
+      {" "}<button type="Submit" class="btn btn-primary">Search</button>
     </form>
   );
 
