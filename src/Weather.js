@@ -31,7 +31,7 @@ export default function Weather() {
   let form = (
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a City" onChange={updateCity} />
-      {" "}<button type="Submit" class="btn btn-primary">Search</button>
+      {" "}<button type="Submit" className="btn btn-primary">Search</button>
     </form>
   );
 
