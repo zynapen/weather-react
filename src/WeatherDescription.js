@@ -14,7 +14,7 @@ export default function WeatherDescription(props) {
      </div>
      <div className="col-md-auto">
       <h1>{props.data.city}</h1>
-          {moment().format('dddd' +' '+ 'LT')}
+          {moment().format('dddd')} {moment().format('LT')}
         <p className="text-capitalize">{props.data.description}</p>
         </div>
 </div>
