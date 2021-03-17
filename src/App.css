@@ -5,14 +5,17 @@
 }
 
 a:link {
+  color: #28527a;
   text-decoration: none;
 }
 
 a:visited {
+  color: #28527a;
   text-decoration: none;
 }
 
 a:hover {
+  color: #8ac4d0;
   text-decoration: none;
 }
 
@@ -45,4 +48,5 @@ ul {
   margin: 30px auto;
   padding: 10px 10px;
   font-size: large;
+  color: #03506f;
 }
