@@ -9,7 +9,7 @@ export default function WeatherDescription(props) {
      <div className="col-md-auto"><Icons code={props.data.icon} /><Unit fahrenheit={props.data.temperature} />
      <ul>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
-            <li>Wind: {Math.round(props.data.wind)} mph</li>
+            <li>Wind: {Math.round(props.data.wind)}mph</li>
           </ul>
      </div>
      <div className="col-md-auto">
