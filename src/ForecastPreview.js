@@ -11,7 +11,6 @@ export default function ForecastPreview(props) {
       {moment(props.data.dt *1000).format("ddd h A")}
       <br />
       <Unit celsius={props.data.main.temp} />
-      <br />
     </div>
   );
 }
