@@ -5,7 +5,7 @@ import moment from "moment";
 
 export default function WeatherDescription(props) {
   return (
-    <div className="WeatherDescription row justify-content-md-center border border-primary border-1 rounded shadow">
+    <div className="WeatherDescription row justify-content-md-center rounded shadow">
      <div className="col-md-auto"><Icons code={props.data.icon} /><Unit fahrenheit={props.data.temperature} />
      <ul>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
