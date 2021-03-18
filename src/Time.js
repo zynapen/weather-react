@@ -14,8 +14,11 @@ export default function Time(){
     
     let time = hourFormatted + ":" + minutesFormatted;
     if (hours >= 12) {
+        // eslint-disable-next-line
       time = time + " " + "PM";
+      // eslint-disable-next-line
     } else {
+        // eslint-disable-next-line
       time = time + " " + "AM";
     }
     
