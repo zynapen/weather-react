@@ -6,25 +6,21 @@
 
 a:link {
   color: #0d169b;
-
   text-decoration: none;
 }
 
 a:visited {
   color: #0d169b;
-
   text-decoration: none;
 }
 
 a:hover {
   color: #8ac4d0;
-
   text-decoration: none;
 }
 
 a:active {
   text-decoration: none;
-
 }
 
 .card-body {
