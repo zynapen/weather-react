@@ -13,7 +13,7 @@ export default function Forecast(props) {
   
     if (loaded && props.city === forecast.city.name) {
       return (
-        <div className="row justify-content-md-center ">
+        <div className="row m-2">
           <ForecastPreview data={forecast.list[0]} />
           <ForecastPreview data={forecast.list[1]} />
           <ForecastPreview data={forecast.list[2]} />

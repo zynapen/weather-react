@@ -20,6 +20,8 @@ export default function Weather(props) {
       sunrise: response.data.sys.sunrise,
       sunset: response.data.sys.sunset,
       temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      visibility: response.data.visibility,
     });
   }
 
@@ -54,7 +56,7 @@ export default function Weather(props) {
     return (
       <div>
         <form onSubmit={handleSubmit}>
-          <div className="row justify-content-md-center">
+          <div className="row justify-content-md-center ">
             <div className="col-md-auto">
               <input
                 type="search"

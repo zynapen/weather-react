@@ -5,9 +5,9 @@ import './App.css';
 
 export default function App() {
   return (
-    <div class="container">
+    <div className="container">
       <div className="App">
-        <div className="card-body m-4 shadow"><Weather defaultCity="Boston" /></div>
+        <div className="card-body shadow-lg"><Weather defaultCity="Boston" /></div>
       <footer className="App-footer">
         This project was coded by <a href="https://www.linkedin.com/in/zynapen/" target="_blank" rel="noreferrer">Zyna Pen</a>
         <br />
