@@ -4,4 +4,4 @@ This project uses the https://openweathermap.org/ API to load the Current Weathe
 ## Deployed Project https://adoring-brown-818a52.netlify.app/
 
 ### Sample
-<img src="https://user-images.githubusercontent.com/73076448/111717701-fd088800-882e-11eb-9e4d-e0bd246d10bc.png">
+<img src="https://user-images.githubusercontent.com/73076448/111721804-04cc2a80-8837-11eb-8673-a34802ec9d81.png">
