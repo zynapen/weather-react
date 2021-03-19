@@ -8,10 +8,10 @@ export default function WeatherDescription(props) {
   return (
     <div className="WeatherDescription row rounded shadow">
      <div className="col">
-      <h1>{props.data.city}</h1>
+     <p className="text-uppercase fs-1 fw-bolder">{props.data.city}</p>
           <Time />
-        <p className="text-capitalize">{props.data.description}</p>
-        <Icons code={props.data.icon} /><Unit fahrenheit={props.data.temperature} />
+        <p className="text-capitalize fw-bold">{props.data.description}</p>
+        <Icons code={props.data.icon} /><p className="fw-bold"><Unit fahrenheit={props.data.temperature} /></p>
         </div>
         <div className="row-auto m-2 justify-content-md-center">
      <div className="row m-1">
@@ -32,7 +32,7 @@ export default function WeatherDescription(props) {
        <div className="col-1">
      <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTI0MSAxMDkuNjUxaDMwdjExMWgtMzB6Ii8+PHBhdGggZD0ibTQxMi4yOCAzOTIuNjQ5Yy03LjU3OC03OS41NTktNzQuNzctMTQxLjk5OC0xNTYuMjgtMTQxLjk5OHMtMTQ4LjcwMiA2Mi40MzktMTU2LjI3OSAxNDEuOTk4aC05OS43MjF2MzBoNTEydi0zMHptLTE1Ni4yOC0xMTEuOTk4YzY0Ljk1NSAwIDExOC42NzUgNDkuMDEzIDEyNi4xMTkgMTExLjk5OWgtMjUyLjIzOGM3LjQ0NC02Mi45ODYgNjEuMTY1LTExMS45OTkgMTI2LjExOS0xMTEuOTk5eiIvPjxwYXRoIGQ9Im02My42NjcgNDUyLjY0OWgzODQuNjY2djMwaC0zODQuNjY2eiIvPjxwYXRoIGQ9Im0zMy43OTQgMjk0Ljk4N2gzMHY2OS4wMDFoLTMweiIgdHJhbnNmb3JtPSJtYXRyaXgoLjM1MyAtLjkzNiAuOTM2IC4zNTMgLTI3Ni43MTYgMjU4Ljg3NCkiLz48cGF0aCBkPSJtMTU1LjU5MSAxNjguODA4aDMwdjY5LjAwMWgtMzB6IiB0cmFuc2Zvcm09Im1hdHJpeCguOTIzIC0uMzg2IC4zODYgLjkyMyAtNjUuMTk4IDgxLjQ5MikiLz48cGF0aCBkPSJtMzA2LjkwOCAxODguMzA5aDY5LjAwMXYyOS45OTloLTY5LjAwMXoiIHRyYW5zZm9ybT0ibWF0cml4KC4zODYgLS45MjMgLjkyMyAuMzg2IDIyLjE3OSA0MzkuOTI0KSIvPjxwYXRoIGQ9Im00MjguNzA1IDMxNC40ODhoNjkuMDAxdjMwaC02OS4wMDF6IiB0cmFuc2Zvcm09Im1hdHJpeCguOTM2IC0uMzUzIC4zNTMgLjkzNiAtODYuNDcyIDE4NC42NTQpIi8+PHBhdGggZD0ibTY5LjUyOCAxODAuNjc3aDMwdjExMWgtMzB6IiB0cmFuc2Zvcm09Im1hdHJpeCguNzA3IC0uNzA3IC43MDcgLjcwNyAtMTQyLjI0NSAxMjguOTQ1KSIvPjxwYXRoIGQ9Im0zNzEuOTczIDIyMS4xNzdoMTExdjMwaC0xMTF6IiB0cmFuc2Zvcm09Im1hdHJpeCguNzA3IC0uNzA3IC43MDcgLjcwNyAtNDEuNzk4IDM3MS40NDMpIi8+PHBhdGggZD0ibTQ2NC40NzcgMTQ4LjcwMSA0NS45ODktNDUuOTg4LTIxLjIxMy0yMS4yMTMtMjAuMzgzIDIwLjM4MnYtNzIuNTMxaC0zMHY3Mi41MzFsLTIwLjY5OC0yMC42OTgtMjEuMjEzIDIxLjIxMyA0Ni4zMDUgNDYuMzA0eiIvPjwvZz48L3N2Zz4=" height="20px" alt="" />
        </div>
-     <div className="col-5 p-1"><p className="text-start">Sunset: {moment(props.data.sunset *1000).format('LT')}</p></div>
+     <div className="col-5 p-1"><p className="text-start ">Sunset: {moment(props.data.sunset *1000).format('LT')}</p></div>
     </div>
     </div>
 </div>
