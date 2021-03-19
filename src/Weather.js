@@ -55,7 +55,7 @@ export default function Weather(props) {
       <div>
         <form onSubmit={handleSubmit}>
           <div className="row justify-content-md-center">
-            <div className="col-4">
+            <div className="col-md-auto">
               <input
                 type="search"
                 placeholder="Enter a City"
@@ -64,21 +64,19 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-4">
+            <div className="col-md-auto">
               <input
                 type="submit"
                 value="Search"
                 className="btn btn-primary w-100 shadow"
               />
               </div>
-              <div className="col-1">
-              <button type="submit" className="btn btn-danger" onClick={updateCurrentLocation}>
+              <div className="col-md-auto">
+              <button type="submit" className="btn btn-warning" onClick={updateCurrentLocation}>
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   fill="currentColor"
-                  className="bi bi-geo-alt-fill"
                   viewBox="0 0 16 16"
                 >
                   <path
