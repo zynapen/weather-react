@@ -12,7 +12,7 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       date: response.data.dt,
-      description: response.data.weather[0].description,
+      description: response.data.weather[0].main,
       high: response.data.main.temp_max,
       humidity: response.data.main.humidity,
       low: response.data.main.temp_min,
@@ -38,12 +38,24 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function handleLocation(position) {
+    const apiKey = "ca63b87c7bc13a6ceda04d4787208678";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&APPID=${apiKey}&units=imperial`;
+
+    axios.get(apiUrl).then(handleResponse);
+}
+
+  function updateCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(handleLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div>
         <form onSubmit={handleSubmit}>
           <div className="row justify-content-md-center">
-            <div className="col-7">
+            <div className="col-4">
               <input
                 type="search"
                 placeholder="Enter a City"
@@ -58,13 +70,32 @@ export default function Weather(props) {
                 value="Search"
                 className="btn btn-primary w-100 shadow"
               />
-            </div>
+              </div>
+              <div className="col-1">
+              <button type="submit" className="btn btn-danger" onClick={updateCurrentLocation}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+              </button>
+              </div>
           </div>
+          
         </form>
         <WeatherDescription data={weatherData} />
         <Forecast city={weatherData.city} />
       </div>
+      
     );
+
   } else {
     search();
     return "Thank you for being patient. Please wait :-)";
