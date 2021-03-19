@@ -72,7 +72,7 @@ export default function Weather(props) {
               />
               </div>
               <div className="col-md-auto">
-              <button type="submit" className="btn btn-warning" onClick={updateCurrentLocation}>
+              <button type="submit" className="btn btn-warning shadow" onClick={updateCurrentLocation}>
                 <svg
                   width="20"
                   height="20"
