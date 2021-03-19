@@ -10,7 +10,7 @@ export default function WeatherDescription(props) {
      <div className="col">
      <p className="text-uppercase fs-1 fw-bolder">{props.data.city}</p>
           <Time />
-        <p className="text-capitalize fw-bold">{props.data.description}</p>
+        <p className="p-1 text-capitalize fw-bold">{props.data.description}</p>
         <Icons code={props.data.icon} /><Unit fahrenheit={props.data.temperature} />
         </div>
         <div className="row-auto m-2 justify-content-md-center">
