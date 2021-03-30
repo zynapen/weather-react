@@ -42,15 +42,6 @@ ul {
   padding: 0;
 }
 
-.WeatherDescription {
-  background-image: linear-gradient(0.45turn, #FFFFFF 0%, #4facfe 150%);
-  max-width: 390px;
-  margin: 30px auto;
-  padding: 10px 10px;
-  font-size: large;
-  color: #03506f;
-}
-
 .App-footer {
   margin: 30px auto;
 }
