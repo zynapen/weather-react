@@ -7,14 +7,15 @@ import "./WeatherDescription.css"
 
 export default function WeatherDescription(props) {
   return (
-    <div className="WeatherDescription row rounded shadow">
-     <div className="col">
+    <div className="container">
+     <section className="WeatherDescription shadow">
      <p className="text-uppercase fs-1 fw-bolder">{props.data.city}</p>
           <Time />
         <p className="p-1 text-capitalize fw-bold">{props.data.description}</p>
         <Icons code={props.data.icon} /><Unit fahrenheit={props.data.temperature} />
-        </div>
+        </section>
 
+        <section className="WeatherDescription shadow">
         <div className="Additional-Info d-flex justify-content-evenly flex-wrap">
         <div className="p-3">
         <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzY4IDM2OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzY4IDM2ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yOTYsNDhjLTM5LjcwNCwwLTcyLDMyLjMwNC03Miw3MmMwLDQuNDE2LDMuNTc2LDgsOCw4czgtMy41ODQsOC04YzAtMzAuODgsMjUuMTI4LTU2LDU2LTU2czU2LDI1LjEyLDU2LDU2DQoJCQlzLTI1LjEyOCw1Ni01Niw1Nkg4Yy00LjQxNiwwLTgsMy41ODQtOCw4czMuNTg0LDgsOCw4aDI4OGMzOS43MDQsMCw3Mi0zMi4zMDQsNzItNzJTMzM1LjcwNCw0OCwyOTYsNDh6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0xNDQsMzJjLTMwLjg4LDAtNTYsMjUuMTItNTYsNTZjMCw0LjQxNiwzLjU4NCw4LDgsOHM4LTMuNTg0LDgtOGMwLTIyLjA1NiwxNy45NDQtNDAsNDAtNDBjMjIuMDU2LDAsNDAsMTcuOTQ0LDQwLDQwDQoJCQljMCwyMi4wNTYtMTcuOTQ0LDQwLTQwLDQwSDhjLTQuNDE2LDAtOCwzLjU4NC04LDhzMy41ODQsOCw4LDhoMTM2YzMwLjg4LDAsNTYtMjUuMTIsNTYtNTZTMTc0Ljg4LDMyLDE0NCwzMnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTI4MCwyMjRIOGMtNC40MTYsMC04LDMuNTg0LTgsOGMwLDQuNDE2LDMuNTg0LDgsOCw4aDI3MmMyMi4wNTYsMCw0MCwxNy45NDQsNDAsNDBjMCwyMi4wNTYtMTcuOTQ0LDQwLTQwLDQwDQoJCQljLTIyLjA1NiwwLTQwLTE3Ljk0NC00MC00MGMwLTQuNDE2LTMuNTc2LTgtOC04cy04LDMuNTg0LTgsOGMwLDMwLjg4LDI1LjEyOCw1Niw1Niw1NnM1Ni0yNS4xMiw1Ni01NlMzMTAuODcyLDIyNCwyODAsMjI0eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" height="20px" alt="" />
@@ -47,6 +48,7 @@ export default function WeatherDescription(props) {
          </div>
 
       </div>
+      </section>
 </div>
   );
 }
