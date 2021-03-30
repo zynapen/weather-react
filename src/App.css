@@ -50,3 +50,7 @@ ul {
   font-size: large;
   color: #03506f;
 }
+
+.App-footer {
+  margin: 30px auto;
+}
