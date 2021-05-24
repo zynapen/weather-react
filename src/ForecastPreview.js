@@ -10,7 +10,7 @@ export default function ForecastPreview(props) {
   }
 
   return (
-    <div className="ForecastPreview col justify-content-md-center m-1 p-2 shadow">
+    <div className="ForecastPreview col justify-content-md-center m-1 p-2 ">
       <Icons code={props.data.weather[0].icon} />
       <br />
       {moment(props.data.dt *1000).format("ddd h A")}
