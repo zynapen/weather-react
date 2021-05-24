@@ -2,15 +2,12 @@ h1 {
   color: #FFFFFF;
   font-weight: 900;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 strong {
   color: #FFFFFF;
   font-weight: bold;
-}
-
-.Additional-Info {
-    font-size: 15px;
 }
 
 .input {
