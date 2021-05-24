@@ -5,17 +5,17 @@
 }
 
 a:link {
-  color: #0d169b;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 a:visited {
-  color: #0d169b;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8ac4d0;
+  color: #fdca40;
   text-decoration: none;
 }
 
@@ -24,16 +24,13 @@ a:active {
 }
 
 .card-body {
+  border-style: solid;
+  border-color: #fdca40;
   border-radius: 25px;
-  background-image: linear-gradient(0.45turn, #FFFFFF 0%, #4facfe 100%);
+  background: #000000;
   max-width: 750px;
   margin: 0 auto;
   padding: 35px 15px;
-}
-
-.ForecastPreview {
-  background-image: linear-gradient(0.45turn, #FFFFFF 0%, #4facfe 100%);
-  max-width: 120px;
 }
 
 ul {
@@ -44,4 +41,5 @@ ul {
 
 .App-footer {
   margin: 30px auto;
+  color: #fdca40;
 }
