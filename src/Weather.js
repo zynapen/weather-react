@@ -61,7 +61,7 @@ export default function Weather(props) {
               <input
                 type="search"
                 placeholder="Enter a City"
-                className="form-control shadow"
+                className="input w-100"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
@@ -70,11 +70,11 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100 shadow"
+                className="btn srch-btn w-100"
               />
               </div>
               <div className="col-md-auto">
-              <button type="submit" className="btn btn-warning shadow" onClick={updateCurrentLocation}>
+              <button type="submit" className="btn geo-btn shadow" onClick={updateCurrentLocation}>
                 <svg
                   width="20"
                   height="20"
